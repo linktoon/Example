@@ -16,7 +16,10 @@
 <body>
 	<a href="javascript:fullscreen()">Fullscreen</a>
 	<p>
-		<label>window.navigator.standalon se: <span class="standalone"></span></label>
+		<label>window.navigator.standalone: <span class="standalone"></span></label>
+	</p>
+	<p>
+		<label>UserAgent: <span class="ua"></span></label>
 	</p>
 </body>
 <script>
@@ -40,6 +43,6 @@
 			}
 		}
 	}
-	document.querySelector(".standalone").innerHTML = window.navigator.standalone;
+	document.querySelector(".ua").innerHTML = window.navigator.userAgent;
 </script>
 </html>
